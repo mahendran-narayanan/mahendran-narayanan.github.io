@@ -110,8 +110,12 @@
 				</tr>
 				<tr>
 					<td width="20%" style="text-align: left;">Deep Learning for Fitness</td>
-					<td><u>Abstract:</u>
+					<td>
+						<button onclick="myFunction()">Abstract</button>
+						<!-- <u>Abstract:</u> -->
+						<div id="abs" style="display: none;">
 					We present Fitness tutor, an application for maintaining correct posture during workout exercises or doing yoga. Current work on fitness focuses on suggesting food supplements, accessing workouts, workout wearables does a great job in improving the fitness. Meanwhile, the current situation is making difficult to monitor workouts by trainee. Inspired by healthcare innovations like robotic surgery, we design a novel application Fitness tutor which can guide the workouts using pose estimation. Pose estimation can be deployed on the reference image for gathering data and guide the user with the data. This allow Fitness tutor to guide the workouts (both exercise and yoga) in remote conditions with a single reference posture as image. We use posenet model in tensorflow with p5js for developing skeleton. Fitness tutor is an application of pose estimation model in bringing a realtime teaching experience in fitness. Our experiments shows that it can leverage potential of pose estimation models by providing guidance in realtime.
+						</div>
 					</td>
 				</tr>
 				</table>
@@ -134,9 +138,9 @@
 				</tr>
 				<tr>
 					<td>
-						<i></i><br/>
+						<i>Transportation website for IIT Tirupati with SMS API</i><br/>
 						<p style="font-size: 18px;">
-							
+							Developed a transportation website for IIT Tirupati with bulkSMS API.
 						</p>
 					</td>
 				</tr>
@@ -169,4 +173,14 @@
 		</div>
 	</div>	
 </body>
+<script type="text/javascript">
+function myFunction() {
+  var x = document.getElementById("abs");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
 </html>
