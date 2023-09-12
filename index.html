@@ -104,16 +104,22 @@
 				</tr>
 				<tr>
 					<td width="20%" style="text-align: left;">Analysis of memory consumption by neural networks based on hyperparameters</td>
-					<td><u>Abstract:</u>
+					<td>
+						<button onclick="Paper2()">Abstract</button>
+						
+						<!-- <u>Abstract:</u> -->
+						<div id="abs2" style="display: none;">
 					Deep learning models are trained and deployed in multiple domains. Increasing usage of deep learning models alarms the usage of memory consumed while computation by deep learning models. Existing approaches for reducing memory consumption like model compression, hardware changes are specific. We propose a generic analysis of memory consumption while training deep learning models in comparison with hyperparameters used for training. Hyperparameters which includes the learning rate, batchsize, number of hidden layers and depth of layers decide the model performance, accuracy of the model. We assume the optimizers and type of hidden layers as a known values. The change in hyperparamaters and the number of hidden layers are the variables considered in this proposed approach. For better understanding of the computation cost, this proposed analysis studies the change in memory consumption with respect to hyperparameters as main focus. This results in general analysis of memory consumption changes during training when set of hyperparameters are altered.
+						</div>
 					</td>
 				</tr>
 				<tr>
 					<td width="20%" style="text-align: left;">Deep Learning for Fitness</td>
 					<td>
 						<button onclick="myFunction()">Abstract</button>
+						
 						<!-- <u>Abstract:</u> -->
-						<div id="abs" style="display: none;">
+						<div id="abs1" style="display: none;">
 					We present Fitness tutor, an application for maintaining correct posture during workout exercises or doing yoga. Current work on fitness focuses on suggesting food supplements, accessing workouts, workout wearables does a great job in improving the fitness. Meanwhile, the current situation is making difficult to monitor workouts by trainee. Inspired by healthcare innovations like robotic surgery, we design a novel application Fitness tutor which can guide the workouts using pose estimation. Pose estimation can be deployed on the reference image for gathering data and guide the user with the data. This allow Fitness tutor to guide the workouts (both exercise and yoga) in remote conditions with a single reference posture as image. We use posenet model in tensorflow with p5js for developing skeleton. Fitness tutor is an application of pose estimation model in bringing a realtime teaching experience in fitness. Our experiments shows that it can leverage potential of pose estimation models by providing guidance in realtime.
 						</div>
 					</td>
@@ -174,8 +180,16 @@
 	</div>	
 </body>
 <script type="text/javascript">
+function Paper2() {
+  var x = document.getElementById("abs2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
 function myFunction() {
-  var x = document.getElementById("abs");
+  var x = document.getElementById("abs1");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
