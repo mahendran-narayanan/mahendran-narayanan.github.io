@@ -1,200 +1,184 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Mahendran Narayanan</title>
-	<style type="text/css">
-		html,body{
-			background-color: #FCFCFC;
-			height: 100%;
-			width:100%;
-		}
-		.container{
-			width: 100%;
-			margin: auto;
-			border-radius: 100px;
-			padding-top: 25px;
-			height: 100%;
-			border:0.5px solid #f0f0f0;
-		}
-		.content{
-			padding-top: 5px;
-			font-size: 22px;
-			width: 55%;
-			margin: auto;
-			opacity: .7;
-/*			text-indent: 125px;*/
-			text-align: justify;
-		}
-		.intro{
-			text-indent: 55px;
-		}
-		.subtitle{
-			font-size: 30px;
-			padding-left: 1%;
-			padding-top: 20%; 
-		}
-		.news{
-			margin-top: 15px;
-			margin-bottom: 15px;
-		}
-		ul li{
-			font-size: 20px;
-			line-height: 35px;
+   <head>
+      <title></title>
+      <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-		}
-		a{
-			text-decoration: none;
-		}
-		img{
-			border-radius: 100px;
-		}
-		.social{
-			padding: 20px;
-			letter-spacing: 30px;
-		}
-		
-	</style>
-</head>
-<body>
-	<div class="container">
-		<div class="content">
-			<b style="font-size: 36px;">Mahendran</b>
-			<div class="intro">
-				<p>
-				I am a Research and Development engineer in deep learning with a working experience of three years. I published 5+ papers in public repositories. I have experience in MLOps, research in GANs, Deep learning in Zentree labs. I also have experience in researching and integrating sparse matrix multiplications on deep learning models to make it suitable for edge devices. Prior to the company, I am a research assistant worked on multiple projects in RISHA Lab of IIT Tirupati.
-				</p>
-			</div>
-			<div class="news">
-				<b>News</b><br/>
-				<!-- <div style="display:none"> -->
-				<table style="border-spacing: 20px 5px;">
-				<tr>
-					<td>26 Aug, 2023</td>
-					<td>Submitted <a href="https://arxiv.org/abs/2308.13791">Handwritten image augmentation</a> paper in ArXiv</td>
-				<tr>
-				<tr>
-					<td>21 Jun, 2023</td>
-					<td>Submitted a paper in WACV 2024.</td>
-				</tr>
-				</table>
-				<!-- </div> -->
-			</div>
-			<b>Research Experience</b>
-				<table style="border-spacing: 20px 15px;">
-				<tr>
-					<td width="20%" style="text-align: left;">Squeeze aggregated excitation network <br/><a href="https://arxiv.org/abs/2308.13343">ArXiv</a></td>
-					<td><u>Abstract:</u>
-					Convolutional neural networks have spatial representations which read patterns in the vision tasks. Squeeze and excitation links the channel wise representations by explicitly modeling on channel level. Multi layer perceptrons learn global representations and in most of the models it is used often at the end after all convolutional layers to gather all the information learned before classification. We propose a method of inducing the global representations within channels to have better performance of the model. We propose SaEnet, Squeeze aggregated excitation network, for learning global channelwise representation in between layers. The proposed module takes advantage of passing important information after squeeze by having aggregated excitation before regaining its shape. We also introduce a new idea of having a multibranch linear(dense) layer in the network. This learns global representations from the condensed information which enhances the representational power of the network. The proposed module have undergone extensive experiments by using Imagenet and CIFAR100 datasets and compared with closely related architectures. The analyzes results that proposed models outputs are comparable and in some cases better than existing state of the art architectures.</td>
-				</tr>
-				<tr>
-					<td width="20%" style="text-align: left;">Handwritten image augmentation <br/><a href="https://arxiv.org/abs/2308.13791">ArXiv</a></td>
-					<td><u>Abstract:</u> In this paper, we introduce Handwritten augmentation, a new data augmentation for handwritten character images. This method focuses on augmenting handwritten image data by altering the shape of input characters in training. The proposed handwritten augmentation is similar to position augmentation, color augmentation for images but a deeper focus on handwritten characters. Handwritten augmentation is data-driven, easy to implement, and can be integrated with CNN-based optical character recognition models. Handwritten augmentation can be implemented along with commonly used data augmentation techniques such as cropping, rotating, and yields better performance of models for handwritten image datasets developed using optical character recognition methods.</td>
-				<tr>
-				<tr>
-					<td width="20%" style="text-align: left;">Variations of Squeeze and Excitation networks</td>
-					<td><u>Abstract:</u>
-					Convolutional neural networks learns spatial features and are heavily interlinked within kernels. The SE module have broken the traditional route of neural networks passing the entire result to next layer. Instead SE only passes important features to be learned with its squeeze and excitation (SE) module. We propose variations of the SE module which improvises the process of squeeze and excitation and enhances the performance. The proposed squeezing or exciting the layer makes it possible for having a smooth transition of layer weights. These proposed variations also retain the characteristics of SE module. The experimented results are carried out on residual networks and the results are tabulated.
-					</td>
-				</tr>
-				<tr>
-					<td width="20%" style="text-align: left;">Memory visualization tool for training neural network</td>
-					<td><u>Abstract:</u>
-					Software developed helps world a better place ranging from system software, open source, application software and so on. Software engineering does have neural network models applied to code suggestion, bug report summarizing and so on to demonstrate their effectiveness at a real SE task. Software and machine learning algorithms combine to make software give better solutions and understanding of environment. In software, there are both generalized applications which helps solve problems for entire world and also some specific applications which helps one particular community. To address the computational challenge in deep learning, many tools exploit hardware features such as multi-core CPUs and many-core GPUs to shorten the training time. Machine learning algorithms have a greater impact in the world but there is a considerable amount of memory utilization during the process. We propose a new tool for analysis of memory utilized for developing and training deep learning models. Our tool results in visual utilization of memory concurrently. Various parameters affecting the memory utilization are analysed while training. This tool helps in knowing better idea of processes or models which consumes more memory.
-					</td>
-				</tr>
-				<tr>
-					<td width="20%" style="text-align: left;">Analysis of memory consumption by neural networks based on hyperparameters</td>
-					<td>
-						<button onclick="Paper2()">Abstract</button>
-						
-						<!-- <u>Abstract:</u> -->
-						<div id="abs2" style="display: none;">
-					Deep learning models are trained and deployed in multiple domains. Increasing usage of deep learning models alarms the usage of memory consumed while computation by deep learning models. Existing approaches for reducing memory consumption like model compression, hardware changes are specific. We propose a generic analysis of memory consumption while training deep learning models in comparison with hyperparameters used for training. Hyperparameters which includes the learning rate, batchsize, number of hidden layers and depth of layers decide the model performance, accuracy of the model. We assume the optimizers and type of hidden layers as a known values. The change in hyperparamaters and the number of hidden layers are the variables considered in this proposed approach. For better understanding of the computation cost, this proposed analysis studies the change in memory consumption with respect to hyperparameters as main focus. This results in general analysis of memory consumption changes during training when set of hyperparameters are altered.
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="20%" style="text-align: left;">Deep Learning for Fitness</td>
-					<td>
-						<button onclick="myFunction()">Abstract</button>
-						
-						<!-- <u>Abstract:</u> -->
-						<div id="abs1" style="display: none;">
-					We present Fitness tutor, an application for maintaining correct posture during workout exercises or doing yoga. Current work on fitness focuses on suggesting food supplements, accessing workouts, workout wearables does a great job in improving the fitness. Meanwhile, the current situation is making difficult to monitor workouts by trainee. Inspired by healthcare innovations like robotic surgery, we design a novel application Fitness tutor which can guide the workouts using pose estimation. Pose estimation can be deployed on the reference image for gathering data and guide the user with the data. This allow Fitness tutor to guide the workouts (both exercise and yoga) in remote conditions with a single reference posture as image. We use posenet model in tensorflow with p5js for developing skeleton. Fitness tutor is an application of pose estimation model in bringing a realtime teaching experience in fitness. Our experiments shows that it can leverage potential of pose estimation models by providing guidance in realtime.
-						</div>
-					</td>
-				</tr>
-				</table>
-			<br/>
-			<b>Projects</b>
-			<table style="border-spacing: 20px 15px;">
-				<tr>
-					<td>
-						<i>Movie scene recognition using deep learning models.</i><br/>
-						<p style="font-size: 18px;text-indent: 20px;">Developed a custom deep learning model for recognizing similar sceneries from the scene of the movie as input. Input from the movie matches with real life mountains, beaches along with the location.</p>
-					</td>
-				<tr>
-				<tr>
-					<td>
-						<i>Tamil handwritten dataset</i><br/>
-						<p style="font-size: 18px;text-indent: 20px;">
-							Collected the dataset of Tamil characters of over 120k+ letters from 200+ students. Processing data cleaning and trying to create a ready-to-use dataset for research purposes.
-						</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<i>Transportation website for IIT Tirupati with SMS API</i><br/>
-						<p style="font-size: 18px;text-indent: 20px;">
-							Developed a transportation website for IIT Tirupati with bulkSMS API.
-						</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<i></i><br/>
-						<p style="font-size: 18px;text-indent: 20px;">
-							
-						</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<i></i><br/>
-						<p style="font-size: 18px;text-indent: 20px;">
-							
-						</p>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<i></i><br/>
-						<p style="font-size: 18px;text-indent: 20px;">
-							
-						</p>
-					</td>
-				</tr>
-				</table>
-			<b></b>
-		</div>
-	</div>	
-</body>
-<script type="text/javascript">
-function Paper2() {
-  var x = document.getElementById("abs2");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-function myFunction() {
-  var x = document.getElementById("abs1");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style type="text/css">
+         .sight_img{
+         height: 80%;
+         width: 100%;
+         }
+         .tabs{
+            margin-top: 20px;
+         }
+         .tab {
+         overflow: hidden;
+         border: 1px solid #ccc;
+         background-color: #f1f1f1;
+         }
+         /* Style the buttons inside the tab */
+         .tabs button {
+         background-color: inherit;
+         float: left;
+         border: none;
+         outline: none;
+         cursor: pointer;
+         padding: 14px 16px;
+         transition: 0.3s;
+         font-size: 17px;
+         }
+         /* Change background color of buttons on hover */
+         .tabs button:hover {
+         background-color: #ddd;
+         }
+         /* Create an active/current tablink class */
+         .tabs button.active {
+         background-color: #ccc;
+         display:block;
+         }
+         .inside {
+         display: none;
+         padding: 6px 12px;
+         }
+         /* Style the tab content 
+         .tabcontent {
+         display: none;
+         padding: 6px 12px;
+         -webkit-animation: fadeEffect 1s;
+         animation: fadeEffect 1s;
+         }
+         /* Fade in tabs
+         @-webkit-keyframes fadeEffect {
+         from {opacity: 0;}
+         to {opacity: 1;}
+         }
+         @keyframes fadeEffect {
+         from {opacity: 0;}
+         to {opacity: 1;}
+         }*/
+         .desc {
+         margin-bottom: 3rem;
+         }
+
+         .title{
+           margin-bottom: 1rem;
+         }
+         .card .card-reveal{
+             background-color: rgba(0, 0, 0, 0.8);
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <div class="intro">
+
+            <p>
+            I am a Research and Development engineer in deep learning with a working experience of three years. I published 5+ papers in public repositories. I have experience in MLOps, research in GANs, Deep learning in Zentree labs. I also have experience in researching and integrating sparse matrix multiplications on deep learning models to make it suitable for edge devices. Prior to the company, I am a research assistant worked on multiple projects in RISHA Lab of IIT Tirupati.
+            </p>
+         </div>
+         <div class="news">
+            <h5><b>News</b></h5><br/>
+            <!-- <div style="display:none"> -->
+            <table style="border-spacing: 20px 5px;">
+            <tr>
+               <td>17 Nov, 2023</td>
+               <td><a href="https://arxiv.org/abs/2311.10807"><i>SENetV2: Aggregated dense layer for channelwise and global representations</i></a> paper in ArXiv (WACV 2024 rejected)</td>
+            </tr>
+            <tr>
+               <td>2023</td>
+               <td>Reviewer for WACV 2024.</td>
+            </tr>
+            <tr>
+               <td>26 Aug, 2023</td>
+               <td>Submitted <a href="https://arxiv.org/abs/2308.13791">Handwritten image augmentation</a> paper in ArXiv</td>
+            </tr>
+            </table>
+         </div>
+         <div class="main-content" style="margin-top: 25px;">
+            <h5><b>Experience</b></h5><br/>
+            <div class="row">
+               <div class="col s12 m4">
+                  <div class="card-panel blue lighten-5">
+                    <span class="black-text">
+                     <b>SENetV2: Aggregated dense layer for channelwise and global representations [ WACV 2024 (Rejected) ]</b><br/>
+                     Proposed a novel aggregated dense layer in a neural network.<br/>
+                     Addition of multi dense layers enhance learning representations in SENet.
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s12 m4">
+                  <div class="card-panel blue lighten-5">
+                    <span class="black-text">
+                     <b>Variations of Squeeze and Excitation networks [ ArXiv ]</b><br/>
+                     Proposed five variants of Squeeze and excitation module.<br/>
+                     This change in module structure impacts the accuracy to a certain extent in SEResnet.
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s12 m4">
+                  <div class="card-panel blue lighten-5">
+                    <span class="black-text">
+                     <b>Deep learning for Fitness [ ArXiv ]</b><br/>
+                     Authoring an application paper to verify the body posture in real-time with a reference image and provide immediate feedback and suggestions.<br/>
+                     Can be applied effectively in exercise and yoga sessions to ensure participants maintain correct postures, offering real-time feedback and guidance for improved performance and alignment.
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s12 m4">
+                  <div class="card-panel blue lighten-5">
+                    <span class="black-text">
+                     <b>Handwritten stroke augmentation on images [ CVPR 2022 (Rejected)]</b><br/>
+                     Authored a novel OCR based universal augmentation technique for OCR texts irrespective of language.
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s12 m4">
+                  <div class="card-panel blue lighten-5">
+                    <span class="black-text">
+                     <b>Memory visualization framework for training neural network</b><br/>
+                     Created a web based UI for monitoring memory consumption w.r.t hyperparameters in network.
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s12 m4">
+                  <div class="card-panel blue lighten-5">
+                    <span class="black-text">
+                     <b>Identifying tourist destinations from movie scenes using Deep Learning [ ArXiv ]</b><br/>
+                     Developed a methodology along with a curated dataset for identifying travel destinations depicted in movies based on the scenic elements portrayed.
+                    </span>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+   </body>
 </html>
+<script>
+   function openCity(evt, cityName) {
+     var i, inside, tablinks;
+     inside = document.getElementsByClassName("inside");
+     for (i = 0; i < inside.length; i++) {
+       inside[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tab");
+     for (i = 0; i < tablinks.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace(" active", "");
+     }
+     document.getElementById(cityName).style.display = "block";
+     evt.currentTarget.className += " active";
+   }
+</script>
