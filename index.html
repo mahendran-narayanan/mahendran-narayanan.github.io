@@ -90,6 +90,18 @@
          .card-panel{
             height: 221px;
          }
+/*         blink*/
+         .blink_me {
+           animation: blinker 1s linear infinite;
+           color: indianred;
+           display: inline;
+         }
+
+         @keyframes blinker {
+           50% {
+             opacity: 0;
+           }
+         }
       </style>
    </head>
    <body>
@@ -108,7 +120,7 @@
             <table style="border-spacing: 20px 5px;">
             <tr>
                <td>2024</td>
-               <td>Paper accepted in conference</td>
+               <td>Paper accepted in conference <div class="blink_me"><b> New</b></div></td>
             </tr>
             <tr>
                <td>17 Nov, 2023</td>
