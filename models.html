@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title></title>
+      <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style type="text/css">
+         .container {
+           margin: 0 auto;
+           max-width: 1000px;
+           width: 65%;
+         }
+         @media only screen and (min-width: 601px) {
+           .container {
+             width: 55%;
+           }
+         }
+         @media only screen and (min-width: 993px) {
+           .container {
+             width: 50%;
+           }
+         }
+         .sight_img{
+         height: 80%;
+         width: 100%;
+         }
+         .tabs{
+            margin-top: 20px;
+         }
+         .tab {
+         overflow: hidden;
+         border: 1px solid #ccc;
+         background-color: #f1f1f1;
+         }
+         /* Style the buttons inside the tab */
+         .tabs button {
+         background-color: inherit;
+         float: left;
+         border: none;
+         outline: none;
+         cursor: pointer;
+         padding: 14px 16px;
+         transition: 0.3s;
+         font-size: 17px;
+         }
+         /* Change background color of buttons on hover */
+         .tabs button:hover {
+         background-color: #ddd;
+         }
+         /* Create an active/current tablink class */
+         .tabs button.active {
+         background-color: #ccc;
+         display:block;
+         }
+         .inside {
+         display: none;
+         padding: 6px 12px;
+         }
+         /* Style the tab content 
+         .tabcontent {
+         display: none;
+         padding: 6px 12px;
+         -webkit-animation: fadeEffect 1s;
+         animation: fadeEffect 1s;
+         }
+         /* Fade in tabs
+         @-webkit-keyframes fadeEffect {
+         from {opacity: 0;}
+         to {opacity: 1;}
+         }
+         @keyframes fadeEffect {
+         from {opacity: 0;}
+         to {opacity: 1;}
+         }*/
+         .desc {
+         margin-bottom: 3rem;
+         }
+
+         .title{
+           margin-bottom: 1rem;
+         }
+         .card .card-reveal{
+             background-color: rgba(0, 0, 0, 0.8);
+         }
+         .card-panel{
+            height: 75px;
+         }
+         .card-panel:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            transform: scale(1.025);
+            height:200px;
+         }
+         .hidden-element {
+            display: none;
+         }
+         .card-panel:hover .hidden-element{
+            display: block;
+            margin: auto;
+/*            height: 50px;*/
+/*            width: 200px;*/
+/*            border: 1px solid green;*/
+/*            border-radius: 5px;*/
+         }
+/*         blink*/
+         .blink_me {
+           animation: blinker 1s linear infinite;
+           color: indianred;
+           display: inline;
+         }
+
+         @keyframes blinker {
+           50% {
+             opacity: 0;
+           }
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container">
+         <h1>Models</h1>
+         <div class="main-content" style="margin-top: 25px;">
+            <h5><b>Research </b><a href="https://scholar.google.com/citations?user=c8subicAAAAJ&hl=en">Google scholar</a> </h5>
+            <div class="row">
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     SENet
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     ResNet
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     ResNeXt
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     WRN
+                    </span>
+                  </div>
+               </div>
+               
+            </div>
+         </div>
+         <div class="main-content" style="margin-top: 25px;">
+            <h5><b>Finetuned</b></h5><br/>
+               
+               <div class="row">
+
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     PoseNet
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     GPT
+                    </span>
+                  </div>
+               </div>
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     RoBERTa
+                    </span>
+                  </div>
+               </div>
+
+               </div>
+            </div>
+         <div class="main-content" style="margin-top: 25px;">
+            <h5><b>Hands-on</b></h5><br/>
+            <div class="row">
+
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     RoBERTa
+                    </span>
+                    <div class="hidden-element">
+                       Twitter data Classification
+                    </div>
+                  </div>
+               </div>
+
+
+            </div>
+         </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+   </body>
+</html>
+<script>
+   function openCity(evt, cityName) {
+     var i, inside, tablinks;
+     inside = document.getElementsByClassName("inside");
+     for (i = 0; i < inside.length; i++) {
+       inside[i].style.display = "none";
+     }
+     tablinks = document.getElementsByClassName("tab");
+     for (i = 0; i < tablinks.length; i++) {
+       tablinks[i].className = tablinks[i].className.replace(" active", "");
+     }
+     document.getElementById(cityName).style.display = "block";
+     evt.currentTarget.className += " active";
+   }
+</script>
