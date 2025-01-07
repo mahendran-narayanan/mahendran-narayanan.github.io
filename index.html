@@ -42,21 +42,40 @@
 			font-size: 18px;
 		}
 		#img{
-			height: 200px;
+/*			height: 200px;*/
          width: 220px;
 			border-radius: 20px;
+         max-width: 100%;
+         height: auto;
+         object-fit: cover;
 		}
-
+      nav{
+         border-radius: 50px;
+         background-color: #d2d2d2;
+      }
 	</style>
 </head>
 <body>
 	<div class="container">
 		<div class="image">
-			<div class="row">
-            <img src="https://mahendran-narayanan.github.io/scripts/images/me.jpg" id="img">
-         </div>
          <div class="row">
-               <h1>Mahendran</h1>
+            <div class="col s3 m3 l3 left">
+                  <img src="https://mahendran-narayanan.github.io/scripts/images/me.jpg" id="img">
+                  <h1>Mahendran</h1>
+            </div>
+            <div class="col s5 m5 l5 right" style="margin-left: 20px;">
+               <a href="https://www.linkedin.com/in/mahendran-narayanan"> LinkedIn </a> |
+               <a href="https://github.com/mahendran-narayanan"> GitHub </a> |
+               <a href="https://scholar.google.com/citations?user=c8subicAAAAJ"> Google scholar </a> |
+               <a href="https://orcid.org/0000-0002-5653-7187"> ORCID </a> |
+               <a href="https://x.com/mahendran_kct"> X ( Twitter ) </a> <br>
+               <br>
+               Masters, Indian Institute of Technology, (CS|AI)
+
+
+                 <!-- <a href="teachings.html">Teachings</a> -->
+                 <!-- <a href="articles.html">Articles</a> -->
+            </div>
          </div>
 		</div>
 		<div class="content"> Hi, I am Mahendran currently working as Independent researcher. I have experience in ML research and ML Engineer based positions. My research areas are Deep learning, classification and vision tasks. I have also played key role in transforming Consulting company to Product company as ML research and development engineer. Worked on POCs, rollouts for senior teams involving shuffling between ML Research and ML Engineer roles for productizing AI. Worked on product code development, creating plugins, raising/resolving JIRAs.
