@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title></title>
-      <!--Import Google Icon Font-->
+<head>
+	<meta charset="utf-8">
+	<title>Research</title>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <style type="text/css">
-         .container {
-           margin: 0 auto;
-           max-width: 1000px;
-           width: 65%;
-         }
-         @media only screen and (min-width: 601px) {
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		html{
+			background: #f3f5f6;
+/*			d2d2d2;*/
+			margin: 20px;
+		}
+		.container{
+			background: white;
+			border-radius: 20px;
+			padding: 40px;
+			margin: 0 auto;
+			max-width: 1000px;
+			width: 65%;
+		}
+		@media only screen and (min-width: 601px) {
            .container {
              width: 55%;
            }
@@ -25,234 +30,44 @@
              width: 50%;
            }
          }
-         .sight_img{
-         height: 80%;
-         width: 100%;
-         }
-         .tabs{
-            margin-top: 20px;
-         }
-         .tab {
-         overflow: hidden;
-         border: 1px solid #ccc;
-         background-color: #f1f1f1;
-         }
-         /* Style the buttons inside the tab */
-         .tabs button {
-         background-color: inherit;
-         float: left;
-         border: none;
-         outline: none;
-         cursor: pointer;
-         padding: 14px 16px;
-         transition: 0.3s;
-         font-size: 17px;
-         }
-         /* Change background color of buttons on hover */
-         .tabs button:hover {
-         background-color: #ddd;
-         }
-         /* Create an active/current tablink class */
-         .tabs button.active {
-         background-color: #ccc;
-         display:block;
-         }
-         .inside {
-         display: none;
-         padding: 6px 12px;
-         }
-         /* Style the tab content 
-         .tabcontent {
-         display: none;
-         padding: 6px 12px;
-         -webkit-animation: fadeEffect 1s;
-         animation: fadeEffect 1s;
-         }
-         /* Fade in tabs
-         @-webkit-keyframes fadeEffect {
-         from {opacity: 0;}
-         to {opacity: 1;}
-         }
-         @keyframes fadeEffect {
-         from {opacity: 0;}
-         to {opacity: 1;}
-         }*/
-         .desc {
-         margin-bottom: 3rem;
-         }
+		.content{
+			font-size: 20px;
+			text-align: justify;
+		}
+		.card{
+			padding: 20px;
+			text-align: center;
+		}
+		.card-content{
+			font-size: 18px;
+		}
+		.image{
+			box-sizing: border-box;
+			background: orange;
+			width: 150px;
+		}
+		#img{
+			height: 250px;
+			border-radius: 20px;
+		}
 
-         .title{
-           margin-bottom: 1rem;
-         }
-         .card .card-reveal{
-             background-color: rgba(0, 0, 0, 0.8);
-         }
-         .card-panel{
-            height: 125px;
-         }
-/*         blink*/
-         .blink_me {
-           animation: blinker 1s linear infinite;
-           color: indianred;
-           display: inline;
-         }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="image">
+			<img src="https://mahendran-narayanan.github.io/scripts/images/me.jpg" id="img">
+		</div>
+		<div class="content"> Hi, I am Mahendran currently working as Independent researcher. I have experience in ML research and ML Engineer based positions. My research areas are Deep learning, classification and vision tasks. I have also played key role in transforming Consulting company to Product company as ML research and development engineer. Worked on POCs, rollouts for senior teams involving shuffling between ML Research and productizing models similar to ML Engineer role. Worked on product code development, creating plugins, raising/resolving JIRAs.
 
-         @keyframes blinker {
-           50% {
-             opacity: 0;
-           }
-         }
-      </style>
-   </head>
-   <body>
-      <div class="container">
-         <h1>Mahendran Narayanan</h1>
-         <div class="intro">
-            <p>
-            Published Machine Learning Researcher with 2 peer-reviewed ( ICPR 2024 , IntelliSys 2024) and 2+ years of applied experience. Proven ability to bridge the gap between theory and practice, with a focus on image classification, computer vision, and natural language processing. Skilled in developing and optimizing state-of-the-art models, including CNNs, vision transformers, and language models. Proficient in cloud computing (AWS, docker, containers). Also have research experience in cutting-edge techniques like sparse matrix multiplication for model acceleration, Quantization pipelines testing.
-            </p>
-            <b>Areas worked: </b> Network engineering, Vision Transformers, Image classification, machine unlearning, Finetuning LLMs, Generative AI, Regularization techniques (DL), Hyperparameter tuning, Model inference Testing.<br/>
-            <b>Areas open to: </b> Deep learning, LLMs, Generative AI, Computer vision.
-         </div>
-         <div class="news">
-            <h5><b>News</b></h5><br/>
-            <!-- <div style="display:none"> -->
-            <table style="border-spacing: 20px 5px;">
-            <tr>
-               <td>2024</td>
-               <td>Paper accepted in <b>ICPR 2024</b> conference <div class="blink_me"><b> New</b></div></td>
-            </tr>
-            <tr>
-               <td>2024</td>
-               <td>Paper accepted in <b>IntelliSys 2024</b> conference </td>
-            </tr>
-            </table>
-         </div>
-         <div class="main-content" style="margin-top: 25px;">
-            <h5><b>Research </b><a href="https://scholar.google.com/citations?user=c8subicAAAAJ&hl=en">Google scholar</a> </h5>
-            <div class="row">
-               <div class="col s12 m12">
-                  <div class="card-panel white lighten-5">
-                    <span class="black-text">
-                     <b>SENetV2: Aggregated dense layer for channelwise and global representations <a href="https://link.springer.com/chapter/10.1007/978-3-031-66329-1_33">[ IntelliSys 2024 ]</a></b><br/>
-                     Proposed a aggregated dense layer within the Squeeze-and-excitation module of a neural network.<br/>
-                     This enhances learning representation in SENet.
-                    </span>
-                  </div>
-               </div>
-
-               <div class="col s12 m12">
-                  <div class="card-panel white lighten-5">
-                    <span class="black-text">
-                     <b>Variations of Squeeze and Excitation networks <a href="https://arxiv.org/abs/2304.06502">[ ArXiv ]</a></b><br/>
-                     Proposed five variants of Squeeze and excitation module.<br/>
-                     This change in module structure impacts the accuracy to a certain extent in SEResnet.
-                    </span>
-                  </div>
-               </div>
-
-               <div class="col s12 m12">
-                  <div class="card-panel white lighten-5">
-                    <span class="black-text">
-                     <b>Deep learning for Fitness <a href="https://arxiv.org/abs/2109.01376">[ ArXiv ]</a></b><br/>
-                     Application paper to compare and verify the body posture in real-time with a reference image and provide immediate feedback and suggestions.<br/>
-                    </span>
-                  </div>
-               </div>
-
-               <div class="col s12 m12">
-                  <div class="card-panel white lighten-5">
-                    <span class="black-text">
-                     <b>Handwritten stroke augmentation on images <a href="https://arxiv.org/abs/2308.13791">[ CVPR 2022 (Rejected)]</a></b><br/>
-                     Authored a novel OCR based universal augmentation technique for OCR texts irrespective of language.
-                    </span>
-                  </div>
-               </div>
-
-               <div class="col s12 m12">
-                  <div class="card-panel white lighten-5">
-                    <span class="black-text">
-                     <b>Memory visualization framework for training neural network <a href="https://arxiv.org/abs/2110.13264">[ ArXiv ]</a></b><br/>
-                     Created a web based UI for monitoring memory consumption w.r.t hyperparameters in network.
-                    </span>
-                  </div>
-               </div>
-
-               <div class="col s12 m12">
-                  <div class="card-panel white lighten-5">
-                    <span class="black-text">
-                     <b>Identifying tourist destinations from movie scenes using Deep Learning <a href="https://arxiv.org/abs/2312.00098">[ ArXiv ]</a></b><br/>
-                     Developed a methodology along with a curated dataset for identifying travel destinations depicted in movies based on the scenic elements portrayed.
-                    </span>
-                  </div>
-               </div>
-               
-            </div>
-         </div>
-         <div class="main-content" style="margin-top: 25px;">
-            <h5><b>Project Experience</b></h5><br/>
-            <div class="row">
-
-               <div class="col s12 m12">
-                  <div class="card-panel white lighten-5">
-                    <span class="black-text">
-                     <b>Generative AI Replace backgrounds <a href="https://github.com/mahendran-narayanan/SD-SAM-for-Background">Code</a></b><br/>
-                     Replacing the background of the generated image.<br/>
-                     Used Stable Diffusion (SD) model and Segment Anything (SAM) model to perform background replacement on the generated image.
-                    </span>
-                  </div>
-               </div>
-
-               <div class="col s12 m12">
-                  <div class="card-panel white lighten-5">
-                    <span class="black-text">
-                     <b>GPT unlearning </b><a href="https://github.com/mahendran-narayanan/GPT-unlearning">Code</a><br/>
-                     Simple try to make GPT unlearn alphabets<br/>
-                     Generated dataset by GPT helps in making GPT unlearn Alphabets.<br/>
-                     Outcomes states "A,B,C no longer represent alphabets by the resultant GPT model."
-                     Note : Model is heavily finetuned.
-                    </span>
-                  </div>
-               </div>
-
-               <div class="col s12 m12">
-                  <div class="card-panel white lighten-5">
-                    <span class="black-text">
-                     <b>Tamil MNIST dataset</b><br/>
-                     Collected a dataset consisting of more than 36,000 samples for Handwritten OCR specifically tailored for the Tamil language.
-                    </span>
-                  </div>
-               </div>
-
-               <div class="col s12 m12">
-                  <div class="card-panel white lighten-5">
-                    <span class="black-text">
-                     <b>Replicating papers</b><br/>
-                     Replicating network engineering papers within the domains of image classification and LLMs.<br/>
-                     Experimenting with the latest modules and open-sourcing the project on GitHub.
-                    </span>
-                  </div>
-               </div>
-
-            </div>
-         </div>
-      </div>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
-   </body>
+		<p> If you are hiring for roles, more details available below</p>
+		<div class="card">
+			<a href="https://mahendran-narayanan.github.io/scripts/mlr.html" title="ML Research"> ML Research </a>
+		</div>
+		<div class="card">
+			<a href="https://mahendran-narayanan.github.io/scripts/mle.html" title="ML Engineer"> ML Engineer </a>
+		</div>
+		</div>
+	</div>
+</body>
 </html>
-<script>
-   function openCity(evt, cityName) {
-     var i, inside, tablinks;
-     inside = document.getElementsByClassName("inside");
-     for (i = 0; i < inside.length; i++) {
-       inside[i].style.display = "none";
-     }
-     tablinks = document.getElementsByClassName("tab");
-     for (i = 0; i < tablinks.length; i++) {
-       tablinks[i].className = tablinks[i].className.replace(" active", "");
-     }
-     document.getElementById(cityName).style.display = "block";
-     evt.currentTarget.className += " active";
-   }
-</script>
