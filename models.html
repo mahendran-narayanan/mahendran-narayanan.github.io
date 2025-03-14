@@ -7,7 +7,6 @@
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <style type="text/css">
          .container {
@@ -37,7 +36,6 @@
          border: 1px solid #ccc;
          background-color: #f1f1f1;
          }
-         /* Style the buttons inside the tab */
          .tabs button {
          background-color: inherit;
          float: left;
@@ -48,11 +46,9 @@
          transition: 0.3s;
          font-size: 17px;
          }
-         /* Change background color of buttons on hover */
          .tabs button:hover {
          background-color: #ddd;
          }
-         /* Create an active/current tablink class */
          .tabs button.active {
          background-color: #ccc;
          display:block;
@@ -61,22 +57,6 @@
          display: none;
          padding: 6px 12px;
          }
-         /* Style the tab content 
-         .tabcontent {
-         display: none;
-         padding: 6px 12px;
-         -webkit-animation: fadeEffect 1s;
-         animation: fadeEffect 1s;
-         }
-         /* Fade in tabs
-         @-webkit-keyframes fadeEffect {
-         from {opacity: 0;}
-         to {opacity: 1;}
-         }
-         @keyframes fadeEffect {
-         from {opacity: 0;}
-         to {opacity: 1;}
-         }*/
          .desc {
          margin-bottom: 3rem;
          }
@@ -101,12 +81,7 @@
          .card-panel:hover .hidden-element{
             display: block;
             margin: auto;
-/*            height: 50px;*/
-/*            width: 200px;*/
-/*            border: 1px solid green;*/
-/*            border-radius: 5px;*/
          }
-/*         blink*/
          .blink_me {
            animation: blinker 1s linear infinite;
            color: indianred;
@@ -157,8 +132,92 @@
                     </span>
                   </div>
                </div>
+
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     LeNet
+                    </span>
+                  </div>
+               </div>
+               
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     AlexNet
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     Big Little net
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     MobileNet v1
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     MobileNet v2
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     ShuffleNetv1
+                    </span>
+                  </div>
+               </div>
+
+               <div class="col s4 m2">
+                  <div class="card-panel white lighten-5">
+                    <span class="black-text">
+                     ShuffleNetV2
+                    </span>
+                  </div>
+               </div>
+
                
             </div>
+         </div>
+         <div class="main-content" style="margin-top:25px;">
+            <h6><b>Transformers</b></h6>
+            <div class="col s4 m2">
+               <div class="card-panel white lighten-5">
+                 <span class="black-text">
+                  ViT
+                 </span>
+               </div>
+            </div>
+
+            <div class="col s4 m2">
+               <div class="card-panel white lighten-5">
+                 <span class="black-text">
+                  Swin Transformer
+                 </span>
+               </div>
+            </div>
+
+            <div class="col s4 m2">
+               <div class="card-panel white lighten-5">
+                 <span class="black-text">
+                  ShiftViT
+                 </span>
+               </div>
+            </div>
+
          </div>
          <div class="main-content" style="margin-top: 25px;">
             <h5><b>Finetuned</b></h5><br/>
